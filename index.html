@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cari Orang Hilang</title>	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet"> 
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Poppins';
+        }
+        body{
+            background-color: black;
+            color: white;
+        }
+        .main{
+            display: grid;
+            grid-template-areas: 'judul'
+                                'konten';
+            background-color: rgb(8, 8, 8);
+            text-align: center;
+            width: 70%;
+            margin: 70px auto;
+            border-radius: 5%;
+            padding: 10px;
+        }
+        .judul{
+            grid-area: judul;
+        }
+        .konten{
+            display: grid;
+            grid-area: konten;
+            grid-template-areas: 'gambar data';
+        }
+        .gambar{
+            grid-area: gambar;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .data{
+            text-align: start;
+            grid-area: data;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+
+        img{
+            border-radius: 20%;
+        }
+        h1{
+            font-size: 50px;
+        }
+        ul li{
+            font-size: 27px;
+        }
+        @media screen and (max-width: 1080px){  
+            .main{
+                margin: 40px auto;
+                width: 80%;
+            }
+            .konten{
+                grid-template-areas: 'gambar'
+                                    'data';
+            }
+            img{
+                width: 150px;
+            }
+            h1{
+                font-size: 35px;
+            } 
+            ul li{
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="judul">
+            <h1>Dicari Orang Hilang</h1>
+        </div>
+        <div class="konten">
+            <div class="gambar">
+                <img src="orang.jpeg" alt="orang hilang" width="300px">
+            </div>
+            <div class="data">
+                <ul>
+                    <li>Nama : Dimas Rangga kusuma</li>
+                    <li>Usia : 16 Tahun</li>
+                    <li>Alamat : Bali, Denpasar</li>
+                    <li>Warna Kulit : Coklat</li>
+                    <li>Terakhir Terlihat : Memakai kaos putih, naik motor, memakai helm hitam</li>
+                    <li>No yang bisa dihubungi 
+                        <br><a href="https://wa.me/62881037817080">+62 881-0378-17080</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
